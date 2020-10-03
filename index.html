@@ -56,13 +56,11 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения<br />
-            для вашего бизнеса
-          </h1>
-          <a href="/" class="button">Заказать услугу</a>
-        </div>
+        <h1 class="hero-title">
+          Эффективные решения<br />
+          для вашего бизнеса
+        </h1>
+        <button class="button-modal" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- Особенности -->
@@ -121,37 +119,35 @@
 
           <ul class="works-list list">
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/whatWeDo1.jpg"
-                  alt="Планшет с клавиатурой"
-                  width="370"
-                  height="250"
-                  class="img"
-                />
-              </a>
+              <img
+                src="./images/whatWeDo1.jpg"
+                alt="Планшет с клавиатурой"
+                width="370"
+                height="250"
+                class="work-image img"
+              />
+              <p class="work-title">Десктопные приложения</p>
             </li>
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/whatWeDo2.jpg"
-                  alt="Разработка приложений на экране ноутбука"
-                  width="370"
-                  height="250"
-                  class="img"
-                />
-              </a>
+              <img
+                src="./images/whatWeDo2.jpg"
+                alt="Разработка приложений на экране ноутбука"
+                width="370"
+                height="250"
+                class="img"
+              />
+              <p class="work-title">Мобильные приложения</p>
             </li>
+
             <li class="item">
-              <a href="">
-                <img
-                  src="./images/whatWeDo3.jpg"
-                  alt="Цветовая гамма на планшете"
-                  width="370"
-                  height="250"
-                  class="img"
-                />
-              </a>
+              <img
+                src="./images/whatWeDo3.jpg"
+                alt="Цветовая гамма на планшете"
+                width="370"
+                height="250"
+                class="img"
+              />
+              <p class="work-title">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -500,5 +496,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close></button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
